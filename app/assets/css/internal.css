@@ -1,0 +1,92 @@
+/* Remove Undo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+._dash-undo-redo {
+    display: none;
+}
+
+body {
+    margin: 0 !important;
+}
+
+/*Ids*/
+#left-side-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-width: 0;
+    border-right: 1px solid #E1E1E1;
+    height: calc(80vh - 5px);
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#right-side-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: calc(80vh - 5px);
+    overflow-y: scroll;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#search-input {
+    border-radius: 50px;
+    height: 30px;
+    width: calc(10vw);
+    margin-bottom: 50px;
+}
+
+#about-me {
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+
+/*Class names*/
+.tab {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .2);
+    border-width: 1px;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    color: black;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tab.first {
+    border-left-style: none;
+}
+
+
+.header {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.avatar {
+    border: 0;
+    width: 150px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.page {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.title {
+    margin-bottom: 5px;
+}
