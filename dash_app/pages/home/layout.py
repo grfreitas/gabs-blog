@@ -9,7 +9,7 @@ search_button = dcc.Input(
     placeholder='Pesquisar')
 
 layout = html.Div(
-    id='app-home',
+    id='dash_app-home',
     className='page',
     children=[
 
@@ -18,14 +18,14 @@ layout = html.Div(
             id='full-header',
             children=[
                 html.Div(
-                    id='app-header',
+                    id='dash_app-header',
                     className='header',
                     children=[
                         html.H2('Blog do Gabs')
                     ],
                 ),
                 html.Div(
-                    id='app-menu',
+                    id='dash_app-menu',
                     children=[
                         dcc.Link(
                             'Início',
@@ -95,11 +95,11 @@ layout = html.Div(
                     ]),
             ]),
 
-        # Content layout
-        html.Div(
-            id='right-side-column',
-            className='nine columns',
-            children=get_content()
-        )
+        # # Content layout
+        # html.Div(
+        #     id='right-side-column',
+        #     className='nine columns',
+        #     children=get_content()
+        # )
     ]
 )
